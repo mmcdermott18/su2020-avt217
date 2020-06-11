@@ -1,3 +1,17 @@
 body {
-  background-color: yellow;
+  margin: 0;
+}
+main.exercise {
+  text-align: center;
+  max-width: 1440px;
+  margin: 50px auto;
+}
+main.exercise img {
+  max-width: 100%;
+}
+main.exercise hr {
+  margin: 50px 0;
+}
+main.exercise > h2, h3, h4, h5, h6, ol, ul, li, p {
+  text-align: left;
 }
