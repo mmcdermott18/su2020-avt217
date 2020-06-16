@@ -1,5 +1,39 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+body {
+  background-color: #181818;
+  color: whitesmoke;
+  font-family: 'DM Sans', sans-serif;
+}
+h1 {
+  margin: 50px 0 0 50px;;
+  font-family: lavigne-display, sans-serif;
+  font-size: 5rem;
+}
+ul {
+  margin: 25px 0 0 50px;
+}
+li {
+  list-style-type: none;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+a:link, a:visited, a:active  {
+  color: whitesmoke;
+  text-decoration: none;
+  border-bottom: 2px solid #181818;
+}
+a:hover {
+  color: tomato;
+  border-bottom: 2px solid tomato;
 }
 main.exercise {
   text-align: center;
