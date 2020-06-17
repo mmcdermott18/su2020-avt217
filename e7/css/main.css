@@ -1,12 +1,93 @@
+/************* fonts ***************/
+/* Spectral 200, 400, 700 + italic */
+/* Sofia Pro 200, 400, 700 + italic */
+
+/* setting defaults */
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* changing to more intuitive box-sizing */
+}
+html {
+  font-size: 16px; /* setting base font-size */
 }
 body {
-  margin: 0;
-  background-color: black;
-  color: white;
+  margin: 0; /* resets body margins to get rid of white border */
+  background-color: floralwhite; /* html color name */
+  color: #262626; /* HEX color */
+  font-family: 'Spectral', serif; /* base font from google*/
+  line-height: 1.5; /* increasing base line-height */
 }
+
+/* layout */
+/* all of the content is wrapped an the main element so the layout sizing doesn't go on the body. It is a bad habit to get in to resize the body from anything other than the 100% it already is */
 main {
-  width: 50%;
-  margin: 50px auto;
+  width: 50vw; /* 50% of the width of the window */
+  margin: 50px auto; /* adding 50px of top margin and setting the left and right to auto so the browser centers the main element on the screen. This works because the main element has a declared width. */
+}
+
+/* type */
+h1, h2, h3, h4, h5, h6 {
+  margin: 50px 0 25px; /* setting general margins for all heading elements */
+  font-family: sofia-pro, sans-serif; /* overriding base font set in body element to adobe font */
+  font-weight: 700; /* Setting default font weight */
+  line-height: 1.15; /* setting default line-height */
+}
+h1 {
+  margin-top: 0; /* overriding set heading margin from above */
+  font-size: 5.653em; /* setting font size */
+  text-transform: uppercase; /* making all caps */
+  letter-spacing: 2px; /* adding some letter-space because of the all caps and bold */
+}
+h2 {
+  font-size: 3.998em; /* setting font size */
+  text-transform: uppercase; /* making all caps */
+  letter-spacing: 2px; /* adding some letter-space because of the all caps and bold */
+}
+h3 {
+  font-size: 2.827em; /* setting font size */
+  letter-spacing: 2px; /* adding some letter-space because of the all caps */
+  font-weight: 400; /* overriding set heading font-weight */
+  font-style: italic; /* setting font to be italic */
+  margin-bottom: 12.5px; /* overriding set bottom margin */
+}
+h4 {font-size: 1.999em;} /* setting font size */
+h5 {font-size: 1.414em;} /* setting font size */
+.author{
+  text-align: right; /* setting text alignment */
+  margin: 0 0 50px; /* overriding set margin for heading elements */
+}
+p {
+  margin-bottom: 12.5px; /* setting bottom margin */
+  font-size: 1.2rem; /* setting font size */
+}
+/* class to style the intro paragraph at the top of the page */
+.intro {
+  font-size: 1.6rem; /* overriding set paragraph font size */
+  font-style: italic; /* setting font to be italic */
+  margin-bottom: 0; /* overriding set paragraph bottom margin */
+}
+/* class to style the sort of aside paragraph after contrast of weight */
+.note {
+  font-style: italic; /* setting font to be italic */
+  padding: 0 100px; /* adding some left and right padding so the text is indented a little on both sides */
+}
+ol {
+  padding: 0 0 0 50px; /* increasing right padding */
+}
+li {
+  font-size: 1.2rem; /* setting font size */
+  font-style: italic; /* setting font to be italic */
+  margin: 6px 0; /* increasing top and bottom margin */
+}
+
+/* other elements */
+/* the hr element before and after the note element to set it off visually a little more */
+hr {
+  border: none; /* clearing default hr style */
+  border-bottom: 5px dotted #262626; /* setting new border styles */
+}
+hr.top {
+  margin: 50px 0 25px; /* adjusting margin of the top hr */
+}
+hr.bottom {
+  margin: 25px 0 50px; /* adjusting margin of the bottom hr */
 }
