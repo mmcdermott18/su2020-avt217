@@ -11,11 +11,13 @@ header, footer {
   padding: 25px 100px;
 }
 h2 {
-  color: #E06445;
+  color: #E06445; /* HEX color */
 }
+/* the li display declaration makes list items display as inline items instead of block items. This lets them sit next to each other horizontally instead of vertically */
 li {
   display: inline;
 }
+/* Makes your image fit to the container width and never be larger than the width of the image itself */
 img {
   max-width: 100%;
 }
