@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header, main, footer {
+  border: 3px solid black;
+  width: calc(100vw - 50px);
+  margin: 25px;
+  background-color: dodgerblue;
+}
+header, footer {
+  height: calc(15vh - 25px);
+}
+main {
+  /* display: flow-root; */
+  overflow: hidden;
+}
+.rCol, .lCol {
+  margin: 25px;
+	width: calc(50% - (75px / 2));
+  height: calc((70vh - 50px) - 50px);
+	float: left;
+  background-color: tomato;
+  border: 3px solid black;
+}
+.rCol {
+  margin-left: 0;
+  /* clear: both; */
+}
