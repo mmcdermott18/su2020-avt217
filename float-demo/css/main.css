@@ -13,8 +13,8 @@ header, footer {
   height: calc(15vh - 25px);
 }
 main {
-  /* display: flow-root; */
-  overflow: hidden;
+  background-color: gold;
+  display: flow-root;
 }
 .rCol, .lCol {
   margin: 25px;
