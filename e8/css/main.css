@@ -3,8 +3,8 @@ body {
   overflow-x: hidden;
 }
 main {
-  width: 140vw;
-  margin: -20vw;
+  width: 120vw;
+  margin: -10vw;
 }
 .pattern-1 .shape1 {
   width: 100px;
