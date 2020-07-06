@@ -1,23 +1,215 @@
+
+
+
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  background-color: #dddddd;
+  background-color: #dddddd; /* dark grey */
 }
+
+/* checkerboard */
 .board {
   width: 800px;
   margin: calc((100vh - 800px) / 2) auto;
 }
-.red {
+.red, .black {
   width: 100px;
   height: 100px;
-  background-color: tomato;
   float: left;
 }
+.red {
+  background-color: tomato;
+}
 .black {
-  width: 100px;
+  background-color: #333333;
+}
+
+/* 3 column layout */
+
+#columns header, #columns nav, #columns main, #columns footer {
+  width: 50vw;
+  margin: 15px auto;
+}
+#columns header, #columns footer {
   height: 100px;
-  background-color: #222222;
+  background-color: tomato;
+}
+#columns nav {
+  height: 25px;
+  background-color: tomato;
+}
+#columns main {
+  display: flow-root;
+}
+.col {
+  width: calc((100% - 30px) / 3);
   float: left;
+  height: 600px;
+  background-color: tomato;
+}
+.mid {
+  margin: 0 15px;
+}
+
+/* blog */
+
+#blog header, #blog main {
+  width: 50vw;
+  margin: 15px auto;
+}
+#blog header {
+  height: 100px;
+  background-color: dodgerblue;
+  margin: 50px auto 100px;
+}
+.text, .avatar, .info {
+  background-color: dodgerblue;
+  float: left;
+}
+.text {
+  width: 80%;
+  height: 400px;
+  margin: 0 0 15px 0;
+}
+.avatar {
+  width: calc(20% - 15px);
+  margin-left: 15px;
+  height: 200px;
+}
+.info {
+  width: 80%;
+  height: 50px;
+  margin-bottom: 100px;
+}
+
+/* tennis court with borders */
+#tennis main {
+  width: 400px;
+  background-color: dodgerblue;
+  display: flow-root;
+  margin: 50px auto;
+  box-sizing: content-box;
+  border: 3px solid white;
+}
+#tennis .side, #tennis .back, #tennis .middle {
+  float: left;
+  background-color: mediumseagreen;
+  border: 3px solid white;
+}
+#tennis .side {
+  width: 75px;
+  height: 300px;
+}
+#tennis .center {
+  width: 250px;
+  float: left;
+}
+#tennis .back {
+  width: 250px;
+  height: 100px;
+}
+#tennis .middle {
+  width: 125px;
+  height: 200px;
+}
+
+/* tennis court with margins */
+#tennis-margins main {
+  width: 418px;
+  background-color: white;
+  padding: 6px;
+  display: flow-root;
+  margin: 50px auto;
+}
+#tennis-margins .side, #tennis-margins .back, #tennis-margins .middle {
+  float: left;
+  background-color: salmon;
+}
+#tennis-margins .side {
+  width: 72px;
+  height: 297px;
+}
+#tennis-margins .center {
+  width: 250px;
+  float: left;
+}
+#tennis-margins .back {
+  width: 250px;
+  height: 100px;
+}
+#tennis-margins .middle {
+  width: 122px;
+  height: 191px;
+}
+#tennis-margins .right-6 {
+  margin-right: 6px;
+}
+#tennis-margins .left-6 {
+  margin-left: 6px;
+}
+#tennis-margins .bottom-6 {
+  margin-bottom: 6px;
+}
+#tennis-margins .top-6 {
+  margin-top: 6px;
+}
+
+/* california case */
+
+.case {
+  background-color: #333333;
+  padding: 20px;
+  display: flow-root;
+  width: 1292px;
+  margin: 25px auto;
+}
+.cc-group {
+  width: 400px;
+  float: left;
+  border: 2px solid white;
+  box-sizing: content-box;
+  /* background-color: #333333; */
+}
+.cc-middle {
+  margin: 0 20px;
+}
+.oneOne, .oneTwo, .twoTwo, .twoThree {
+  border: 2px solid white;
+  float: left;
+}
+.oneOne {
+  width: 50px;
+  height: 100px;
+}
+.oneTwo {
+  width: 50px;
+  height: 200px;
+}
+.twoTwo {
+  width: 100px;
+  height: 200px;
+}
+.twoThree {
+  width: 100px;
+  height: 300px;
+}
+.c-sixThree {
+  width: 300px;
+  float: left;
+  background-color: dodgerblue;
+  display: flow-root;
+}
+.c-oneTwo {
+  width: 50px;
+  float: left;
+  background-color: dodgerblue;
+  display: flow-root;
+}
+.c-twoTwo {
+  width: 100px;
+  float: left;
+  background-color: dodgerblue;
+  display: flow-root;
 }
