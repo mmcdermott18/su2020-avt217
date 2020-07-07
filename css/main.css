@@ -72,9 +72,7 @@ a:hover {
   border-bottom: 2px solid tomato;
 }
 
-
 /* if you are looking at this, ignore the below for right now */
-
 
 body.interior {
   background-color: whitesmoke;
@@ -106,4 +104,22 @@ main.exercise a:link, main.exercise a:visited, main.exercise a:active  {
 main.exercise a:hover {
   color: tomato;
   border-bottom: 2px solid tomato;
+}
+
+/********** responsive styles **********/
+
+@media screen and (max-width: 900px) {
+  .col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  header {
+    width: 90vw;
+  }
+  main {
+    width: 90vw;
+  }
+  h1 {
+    font-size: 4rem;
+  }
 }
