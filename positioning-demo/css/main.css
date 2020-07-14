@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+main {
+  width: 25vw;
+  margin: 10px auto;
+}
+div {
+  margin: 0 0 10px;
+  padding: 10px;
+}
+p {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+/* Static – Default value. Elements render in order, as they appear in the document flow */
+.static {
+  position: static; /* default */
+  width: 25vw;
+  height: 25vw;
+  background-color: salmon;
+}
+/* Relative – The element is positioned relative to its normal position */
+.relative-A {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  background-color: rebeccapurple;
+  left: 100px;
+  top: 100px;
+}
+.relative-B {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  background-color: royalblue;
+  top: 0;
+  right: 0;
+}
+/* Absolute - The element is positioned relative to its first positioned (not static) ancestor element */
+
+/* for .absoluteA there is no first positioned ancestor so it positions relative to the window */
+.absolute-A {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  background-color: aquamarine;
+  right: 0;
+  top: 0;
+}
+/* for .absoluteB the first positioned ancestor is .relativeB so .absoluteB positions itself relative to .relativeB */
+.absolute-B {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: aqua;
+  left: 5vw;
+  top: 5vw;
+}
+/* Fixed - The element is positioned relative to the browser window */
+.fixed {
+  position: fixed;
+  width: 25vw;
+  height: 25vw;
+  background-color: fuchsia;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}

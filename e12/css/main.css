@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.phone {
+  width:  400px;
+  height: 800px;
+  background-color: black;
+  border: 5px solid silver;
+  border-radius: 35px;
+  margin: 100px auto;
+  position: relative;
+}
+.camera {
+  width: 15px;
+  height: 15px;
+  background-color: #555555;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(195px - 7.5px);
+  top: 40px;
+}
+.topButton {
+  width: 50px;
+  height: 15px;
+  background-color: #999999;
+  position: absolute;
+  border-top: 4px solid silver;
+  right: 50px;
+  top: -10px;
+  z-index: -1;
+}
+.silenceButton {
+  width: 15px;
+  height: 40px;
+  background-color: orange;
+  position: absolute;
+  border-left: 4px solid silver;
+  left: -10px;
+  top: 100px;
+  z-index: -1;
+}
+.volumeUp, .volumeDown {
+  width: 15px;
+  height: 25px;
+  background-color: #999999;
+  position: absolute;
+  border-left: 4px solid silver;
+  left: -10px;
+  z-index: -1;
+}
+.volumeUp {
+  top: 170px;
+}
+.volumeDown {
+  top: 220px;
+}
+.speaker {
+  width: 75px;
+  height: 12px;
+  background-color: #777777;
+  border: 3px solid #222222;
+  border-radius: 7.5px;
+  position: absolute;
+  left: calc(195px - 37.5px);
+  top: 70px;
+}
+.screen {
+  width: 360px;
+  height: 575px;
+  background-color: dodgerblue;
+  position: absolute;
+  left: calc(195px - (360px / 2));
+  top: 100px;
+  overflow: hidden;
+  transition: all 2s ease;
+}
+.screen:hover {
+  background-color: tomato;
+}
+.button {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border: 3px solid #222222;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(195px - 25px);
+  bottom: 25px;
+}
+.tl-blacktik, .tr-blacktik, .bl-blacktik, .br-blacktik {
+  width: 5px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+}
+.tl-blacktik {
+  left: -5px;
+  top: 70px;
+}
+.tr-blacktik {
+  right: -5px;
+  top: 70px;
+}
+.bl-blacktik {
+  left: -5px;
+  bottom: 70px;
+}
+.br-blacktik {
+  right: -5px;
+  bottom: 70px;
+}
+.face {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border: 5px solid #222222;
+  border-radius: 50%;
+  position: absolute;
+  left: 100px;
+  top: calc((575px / 2) - 50px);
+  animation: faceMove 2s infinite;
+}
+.l-eye, .r-eye {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+}
+.l-eye {
+  left: 15px;
+  animation: wink .1s infinite;
+}
+.r-eye {
+  right: 15px;
+}
+.mouth {
+  width: 50px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  animation: mouthOpen .1s infinite;
+}
+@keyframes faceMove {
+  0% {left: -100px;}
+ 100% {left: 460px;}
+}
+@keyframes mouthOpen {
+  0% {height: 0;}
+ 100% {height: 10px;}
+}
+@keyframes wink {
+  0% {height: 0;}
+ 100% {height: 25px;}
+}
