@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+main {
+  display: flow-root;
+  width: 475px;
+  margin: calc((100vh - 350px) / 2) auto;
+}
+.c-threeTwo {
+  width: 375px;
+  float: left;
+}
+.oneOne, .oneTwo, .twoOne {
+  background-color: #D039FD;
+  float: left;
+}
+.oneOne {
+  width: 100px;
+  height: 100px;
+}
+.oneTwo {
+  width: 100px;
+  height: 225px;
+}
+.twoOne {
+  width: 225px;
+  height: 100px;
+}
+.rb-margin {
+  margin: 0 25px 25px 0;
+}
+.r-margin {
+  margin: 0 25px 0 0;
+}
