@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: lightgrey;
+}
+main {
+  margin: 100px 0;
+}
+.gallery {
+  width: 60vw;
+  margin: 0 auto 100px;
+}
+img {
+  max-width: 100%;
+}
+p {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+a:link, a:active, a:visited {
+  color: black;
+  transition: color 250ms ease;
+}
+a:hover {
+  color: orange;
+}
