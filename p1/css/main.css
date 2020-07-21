@@ -14,10 +14,16 @@ h2 {
   color: #E06445; /* HEX color */
 }
 /* the li display declaration makes list items display as inline items instead of block items. This lets them sit next to each other horizontally instead of vertically */
-li {
+nav li {
   display: inline;
 }
 /* Makes your image fit to the container width and never be larger than the width of the image itself */
 img {
   max-width: 100%;
+}
+nav nav {
+  float: left;
+}
+header p {
+  float: left;
 }
