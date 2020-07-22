@@ -7,6 +7,6 @@ $(document).ready(function() {
   $('#number4').click(function() {
     // $('#number4').css('color', 'goldenrod');
     $('#number4').toggleClass('text-color-to-goldenrod');
-    console.log('we just changed the color!')
+    console.log('we just changed the color!');
   });
 });

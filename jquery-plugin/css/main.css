@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
 body {
   margin: 0;
-  box-sizing: border-box;
-  font-size: 16px;
   background-color: lightgrey;
 }
 main {
@@ -14,6 +18,16 @@ main {
 img {
   max-width: 100%;
 }
+
+.slick-prev:before, .slick-next:before {
+  color: orange;
+}
+
+
+
+
+
+
 p {
   text-align: center;
   font-family: 'Lato', sans-serif;
